@@ -11,6 +11,7 @@ variable "master_instance_name" {
 variable "region" {
   type        = string
   description = "Region of the GCP project"
+  default = "us-central1"
 }
 
 
