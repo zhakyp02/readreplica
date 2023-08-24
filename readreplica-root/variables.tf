@@ -81,3 +81,9 @@ variable "read_replica_name_suffix" {
   type        = string
   default     = "-replica"
 }
+
+variable "database_version" {
+  description = " Database version"
+  type        = string
+  default     = ""
+}
