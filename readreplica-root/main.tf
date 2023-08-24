@@ -27,7 +27,7 @@ module "cloudsql_mssql_replicas_test" {
   tier                     = var.tier
   master_instance_name     = module.<master_module_name>.name
   # master_instance_name     = data.terraform_remote_state.read_replica.outputs.name
-  database_version         = "SQLSERVER_2019_ENTERPRISE"
+  database_version         = var.database_version
   read_replicas            = var.read_replica
   read_replica_name_suffix = var.read_replica_name_suffix
 }
