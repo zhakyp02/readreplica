@@ -20,7 +20,7 @@
 
 ## example 
 module "cloudsql_mssql_replicas_test" {
-  source = "../../child-module/replica-for-postgres"
+  source = "../../child-module/replica-for-postgres-child"
   project_id               = var.project_id
   name                     = "assql-enterprise"
   zone                     = var.zone
